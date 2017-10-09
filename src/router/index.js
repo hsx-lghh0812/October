@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 import User from '@/components/User'
 import UserProfile from '@/components/UserProfile'
 import UserPosts from '@/components/UserPosts'
+import Product from '@/components/Product'
 
 Vue.use(Router)
 
@@ -13,6 +14,11 @@ export default new Router({
       path: '/',
       name: 'Hello',
       component: HelloWorld
+    },
+    {
+      path: '/product',
+      name: 'Product',
+      component: Product
     },
     {
       path: '/user/:id',
