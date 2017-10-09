@@ -7,12 +7,12 @@
       </div>
       <div class="basic-info">
         <div>
-          <div id="preferentialPrice" class="fl">优惠价</div>
-          <div id="retailPrice" class="fl">零售价</div>
-          <div id="salesVolume" class="fr">已售</div>
+          <div id="preferentialPrice" class="fl">优惠价：￥{{msg}}</div>
+          <div id="retailPrice" class="fl">零售价：￥{{}}</div>
+          <div id="salesVolume" class="fr">已售：￥{{}}</div>
           <div class="clearfix"></div>
         </div>
-        <div id="goodsName">商品名称</div>
+        <div id="goodsName">{{}}</div>
         <div class="right-icon-detail">
           <div>
             <span class="right-icon"></span><span><span>正品保证</span> </span>
@@ -59,11 +59,14 @@
 
 <script>
   export default {
-    name: 'product',
     data () {
       return {
         msg: 'Welcome to Your product'
       }
+    },
+    method: {},
+    mounted: function () {
+      console.log('mounted>>>>>>>>>>>>>>')
     }
   }
 </script>
